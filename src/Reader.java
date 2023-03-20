@@ -20,6 +20,7 @@ public class Reader {
 
             String line;
             while ((line = bufferedReader.readLine()) != null) {
+                line = line.toLowerCase();
                 System.out.println(line.getClass());
                 lines.add(line);
             }
@@ -41,6 +42,7 @@ public class Reader {
             String[] words = str.split(" ");
             if (words.length > 1) {
                 System.out.println(str + " tiene más de una palabra.");
+
             } else {
                 System.out.println(str + " tiene una sola palabra.");
             }

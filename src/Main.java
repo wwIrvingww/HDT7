@@ -6,10 +6,16 @@ public class Main {
         Tree t = new Tree();
 
         //Declarar variables;
-        int option;
+        int optionInt;
+        int optionOut;
 
         //Obtener informacion del usuario
-        System.out.println("Ingrese la opcion del traductor: \n1.Spanish-France \n2.Spanish-English");
-        option = sc.nextInt();
+        System.out.println("Ingrese el idioma de entrada: \n(1)Ingles \n(2)Español \n(3)Frances");
+        optionInt = sc.nextInt();
+
+        System.out.println("Ingrese el idioma de salida: \n(1)Ingles \n(2)Español \n(3)Frances");
+        optionOut = sc.nextInt();
+
+
     }
 }
