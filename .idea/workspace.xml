@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cea00f5f-b30d-44b5-9405-0bb9b35b9d27" name="Changes" comment="Se implementó la clase Tree">
+    <list default="true" id="cea00f5f-b30d-44b5-9405-0bb9b35b9d27" name="Changes" comment="se modifico el main">
+      <change afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,14 +31,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,7 +48,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679325782366</updated>
       <workItem from="1679325783678" duration="39000" />
-      <workItem from="1679325830514" duration="2795000" />
+      <workItem from="1679325830514" duration="3412000" />
+      <workItem from="1679439596679" duration="1259000" />
     </task>
     <task id="LOCAL-00001" summary="Se implementó la clase para leer archivos (Reader)">
       <created>1679326022782</created>
@@ -63,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679331343272</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="se modifico el main">
+      <created>1679337108695</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679337108695</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,6 +92,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se implementó la clase para leer archivos (Reader)" />
     <MESSAGE value="Se implementó la clase Tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se implementó la clase Tree" />
+    <MESSAGE value="se modifico el main" />
+    <option name="LAST_COMMIT_MESSAGE" value="se modifico el main" />
   </component>
 </project>
