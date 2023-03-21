@@ -35,19 +35,21 @@ public class Reader {
 
 
     /**
-     * Metodo que verifica si una linea tiene mas de una palabra
+     * Separa las oraciones en palabras
+     * @param sentences
+     * @return
      */
-    public static void checkMultipleWords (ArrayList <String> list) {
-        for (String str : list) {
-            String[] words = str.split(" ");
-            if (words.length > 1) {
-                System.out.println(str + " tiene más de una palabra.");
-
-            } else {
-                System.out.println(str + " tiene una sola palabra.");
+    public static ArrayList<String> spliter(ArrayList<String> sentences) {
+        ArrayList<String> words = new ArrayList<>();
+        for (String oracion : sentences) {
+            String[] palabrasOracion = oracion.split(" ");
+            for (String palabra : palabrasOracion) {
+                words.add(palabra);
             }
         }
+        return words;
     }
+
 
 
 
