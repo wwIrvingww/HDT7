@@ -1,3 +1,7 @@
+/**
+ * Clase que implementa el arbol binario solicitado
+ */
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -6,6 +10,11 @@ public class BinaryTree {
 
     private static Node root;
 
+    /**
+     * Agrega palabaras al mapa. La key es la palabra en el idioma extranjero y el value es su significado en español
+     * @param other
+     * @param spanish
+     */
     public static void addWord(String other, String spanish) {
         other = other.toLowerCase();
         spanish = spanish.toLowerCase();
@@ -16,6 +25,13 @@ public class BinaryTree {
         }
     }
 
+    /**
+     * Agrega una nueva palabra al árbol de búsqueda binaria en orden alfabético basandose en OTHER, (la palabra en otro idioma)
+     * y su traducción al español. Si ya existe, cambia el valo
+     * @param node
+     * @param other
+     * @param spanish
+     */
     private static void addWord(Node node, String other, String spanish) {
         other = other.toLowerCase();
         spanish = spanish.toLowerCase();
@@ -36,6 +52,11 @@ public class BinaryTree {
         }
     }
 
+    /**
+     * Retorna el valor de la key, literalmente traduce basandose en la funcion find
+     * @param other
+     * @return
+     */
     public String translate(String other) {
         Node node = find(root, other);
         if (node == null) {
@@ -45,6 +66,12 @@ public class BinaryTree {
         }
     }
 
+    /**
+     * Busca en el nodo que contiene el valor de la key solicitada
+     * @param node
+     * @param other
+     * @return
+     */
     private Node find(Node node, String other) {
         if (node == null) {
             return null;
@@ -58,39 +85,13 @@ public class BinaryTree {
     }
 
 
-    public void addWordsFromFile(String fileName) throws IOException {
-        FileReader fileReader = new FileReader(fileName);
-        BufferedReader bufferedReader = new BufferedReader(fileReader);
-
-        String line;
-        while ((line = bufferedReader.readLine()) != null) {
-            String[] parts = line.split(",");
-            String word = parts[0].trim();
-            String translation = parts[1].trim();
-            addWord(word, translation);
-        }
-
-        bufferedReader.close();
-        fileReader.close();
-    }
-
-    public void addWordsFromFile(String filename, int wordIndex) {
-        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                String[] words = line.split(",");
-                if (words.length == 3) {
-                    String key = words[wordIndex - 1].trim().toLowerCase();
-                    String value = words[wordIndex].trim().toLowerCase();
-                    addWord(key, value);
-                }
-            }
-        } catch (IOException e) {
-            System.err.format("IOException: %s%n", e);
-        }
-    }
-    public static void leerArchivo(String rutaArchivo, int parametro) {
-        //HashMap<String, String> mapa = new HashMap<>();
+    /**
+     * Lee el archivo que contiene el banco de palabras con sus traducciones y los almacena en un mapa.
+     * El parametro sirve para saber si tomar la palabra en ingles (1) o la palabra en frances (2)
+     * @param rutaArchivo
+     * @param parametro
+     */
+    public static void readFile(String rutaArchivo, int parametro) {
 
         try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
             String linea;
@@ -106,7 +107,7 @@ public class BinaryTree {
                 if (parametro == 1) {
                     key = palabras[0];
                     value = palabras[1];
-                } else if (parametro == 3) {
+                } else if (parametro == 2) {
                     key = palabras[2];
                     value = palabras[1];
                 } else {
@@ -122,8 +123,4 @@ public class BinaryTree {
         }
 
     }
-
-
-
-
 }

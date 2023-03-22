@@ -6,32 +6,33 @@ public class Main {
         //Instanciar objetos
         Scanner sc = new Scanner(System.in);
         BinaryTree translator = new BinaryTree();
+        Reader reader = new Reader();
 
 
         //Declarar variables;
         int optionInp;
-        int optionOut;
-
         String pathText = "C:\\Users\\USUARIO\\OneDrive\\UVG\\Clases\\Tercer Semestre\\Estructura de datos\\Codes\\HDT6-Dictionary\\HDT7\\src\\Text.txt";
         String pathTranslations = "C:\\Users\\USUARIO\\OneDrive\\UVG\\Clases\\Tercer Semestre\\Estructura de datos\\Codes\\HDT6-Dictionary\\HDT7\\src\\Translations.txt";
-        //Obtener informacion del usuario
+        ArrayList<String> sentences = Reader.readFile(pathText);
 
+        //Bienvenida
+        String welcome = "─▌█──║─║╔═║─║─╔═╗─\n" +
+                "─███─╠═╣╠═║─║─║─║─\n" +
+                "─▐█▐─║─║╚═╚═╚═╚═╝─\n" +
+                "─▐▐───────────────\n" +
+                "─▐▐───────────────";
+        System.out.println(welcome);
 
-        System.out.println("Ingrese el idioma de entrada: \n(1)Ingles \n(2)Español \n(3)Frances");
+        //Solicitar informacion al usuario
+        System.out.println("Ingrese el idioma de entrada: \n(1)Ingles\n(2)Frances");
         optionInp = sc.nextInt();
 
-        if (optionInp == 2){
-            System.out.println("");
-        }
+        //Leer los acrchivos del txtfile
+        BinaryTree.readFile(pathTranslations,optionInp);
 
-        /**System.out.println("Ingrese el idioma de salida: \n(1)Ingles \n(2)Español \n(3)Frances");
-        optionOut = sc.nextInt();*/
 
-        BinaryTree.leerArchivo(pathTranslations,optionInp);
-
-        ArrayList<String> sentences = Reader.readFile(pathText);
-        System.out.println(sentences.size());
-
+        //Reocorrer las lineas del textFile y traducir cada palabra
+        System.out.println("El texto traducido es:\n");
         for (String s : sentences) {
             String[] palabras = s.split(" ");
             StringBuilder traduccion = new StringBuilder();

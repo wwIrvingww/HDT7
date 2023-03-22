@@ -1,3 +1,6 @@
+/**
+ * Clase nodo util para el arbol
+ */
 public class Node {
         String other;
         String spanish;
