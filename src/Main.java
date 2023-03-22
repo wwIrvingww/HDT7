@@ -28,9 +28,18 @@ public class Main {
         optionOut = sc.nextInt();*/
 
         BinaryTree.leerArchivo(pathTranslations,optionInp);
-        System.out.println(translator.translate("hello"));
 
+        ArrayList<String> sentences = Reader.readFile(pathText);
+        System.out.println(sentences.size());
 
-
+        for (String s : sentences) {
+            String[] palabras = s.split(" ");
+            StringBuilder traduccion = new StringBuilder();
+            for (String palabra : palabras) {
+                String traduccionPalabra = translator.translate(palabra);
+                traduccion.append(traduccionPalabra).append(" ");
+            }
+            System.out.println(traduccion.toString().trim());
+        }
     }
 }

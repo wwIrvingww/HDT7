@@ -50,6 +50,16 @@ public class Reader {
         return words;
     }
 
+    public static ArrayList<String> spliter(String cadena) {
+        String[] arreglo = cadena.split(" "); // dividir la cadena por espacios en blanco
+        ArrayList<String> lista = new ArrayList<String>(); // crear un ArrayList vacío para almacenar las palabras
+        for (int i = 0; i < arreglo.length; i++) {
+            lista.add(arreglo[i]); // agregar cada palabra al ArrayList
+        }
+        return lista; // retornar el ArrayList con las palabras
+    }
+
+
 
 
 
