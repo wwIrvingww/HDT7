@@ -7,8 +7,12 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class BinaryTree {
-
     private static Node root;
+    public static Node getRoot() {
+        return root;
+    }
+
+
 
     /**
      * Agrega palabaras al mapa. La key es la palabra en el idioma extranjero y el value es su significado en español
@@ -123,4 +127,13 @@ public class BinaryTree {
         }
 
     }
+
+    public static void printInOrder(Node node) {
+        if (node != null) {
+            printInOrder(node.left);
+            System.out.print("(" + node.other + ", " + node.spanish + ") ");
+            printInOrder(node.right);
+        }
+    }
+
 }

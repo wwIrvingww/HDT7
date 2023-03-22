@@ -11,4 +11,6 @@ public class Node {
             this.other = other;
             this.spanish = spanish;
         }
+
+
 }
