@@ -1,3 +1,10 @@
+/**
+ * Programa que tiene como objetivo simular un traductor de frances-español e ingles-español
+ * Autor: Irving Acosta - 22781
+ * Ultima modificación: 22.03.2023
+ * Ingeniero: Pablo Godoy
+ */
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -50,7 +57,7 @@ public class Main {
 
         if (sout == 1){
             BinaryTree.printInOrder(BinaryTree.getRoot());
-            System.out.println("Gracias por usar el diccionario");
+            System.out.println("\nGracias por usar el diccionario");
         }
         else {
             System.out.println("Gracias por usar el diccionario");

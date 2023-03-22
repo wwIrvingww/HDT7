@@ -76,7 +76,7 @@ public class BinaryTree {
      * @param other
      * @return
      */
-    private Node find(Node node, String other) {
+    public Node find(Node node, String other) {
         if (node == null) {
             return null;
         } else if (other.compareTo(node.other) == 0) {

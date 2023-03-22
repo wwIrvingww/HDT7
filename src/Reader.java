@@ -1,3 +1,7 @@
+/**
+ * Clase que se encarga de leer un txtFile
+ */
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
