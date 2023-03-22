@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cea00f5f-b30d-44b5-9405-0bb9b35b9d27" name="Changes" comment="se refactorizo la manera de leer archivos">
+    <list default="true" id="cea00f5f-b30d-44b5-9405-0bb9b35b9d27" name="Changes" comment="se agrego metodo para traducir de ingles a spanish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
       <workItem from="1679325783678" duration="39000" />
       <workItem from="1679325830514" duration="3412000" />
       <workItem from="1679439596679" duration="10362000" />
-      <workItem from="1679490426879" duration="1763000" />
+      <workItem from="1679490426879" duration="2307000" />
     </task>
     <task id="LOCAL-00001" summary="Se implementó la clase para leer archivos (Reader)">
       <created>1679326022782</created>
@@ -93,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679458672352</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="se agrego metodo para traducir de ingles a spanish">
+      <created>1679495114635</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679495114635</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +123,7 @@
     <MESSAGE value="se refactorizo el arbol y se agrego la clase Node" />
     <MESSAGE value="se elimino un metodo del Reader y se agrego otro mas funcional" />
     <MESSAGE value="se refactorizo la manera de leer archivos" />
-    <option name="LAST_COMMIT_MESSAGE" value="se refactorizo la manera de leer archivos" />
+    <MESSAGE value="se agrego metodo para traducir de ingles a spanish" />
+    <option name="LAST_COMMIT_MESSAGE" value="se agrego metodo para traducir de ingles a spanish" />
   </component>
 </project>

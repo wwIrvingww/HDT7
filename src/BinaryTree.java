@@ -39,7 +39,7 @@ public class BinaryTree {
     public String translate(String other) {
         Node node = find(root, other);
         if (node == null) {
-            return null;
+            return "*"+other+"*";
         } else {
             return node.spanish;
         }
